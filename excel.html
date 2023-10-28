@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Excel</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+                <li><button id="toggleThemeButton">Toggle Theme</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="excelForm">
+            <label for="numbers">Enter Numbers (space-separated):</label>
+            <input type="text" id="numbers" name="numbers" required>
+            <br>
+
+            <label>Choose Excel Function:</label>
+            <br>
+            <div class="Radio">
+                <input type="radio" id="autoSum" name="excelFunction" value="AutoSum" checked>
+                <label for="autoSum">AutoSum</label>
+            </div>
+
+            <div class="Radio">
+                <input type="radio" id="average" name="excelFunction" value="Average">
+                <label for="average">Average</label>
+            </div>
+            
+            <div class="Radio">
+                <input type="radio" id="max" name="excelFunction" value="Max">
+                <label for="max">Max</label>
+            </div>
+            
+            <div class="Radio">
+                <input type="radio" id="min" name="excelFunction" value="Min">
+                <label for="min">Min</label>
+            </div>
+
+            <br>
+
+            <button type="submit">Calculate</button>
+        </form>
+    </main>
+    <div id="excel-output">
+
+    </div>
+    <footer>
+        <p>
+            ILAC & EFREI - HTML, CSS, and Javascript Assignement - TB
+        </p>
+    </footer>
+
+    <script src="js/script-excel.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
